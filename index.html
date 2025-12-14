@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>TP CI/CD - Site Statique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS DANS LA MÊME PAGE -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #1e293b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background: #e5e7eb;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>TP CI/CD DevOps 🚀</h1>
+    <p>Site statique HTML + CSS + JS</p>
+  </header>
+
+  <main>
+    <p>Clique sur le bouton pour tester le JavaScript :</p>
+    <button onclick="sayHello()">Clique ici</button>
+    <p id="message"></p>
+  </main>
+
+  <footer>
+    <p>Déployé automatiquement avec GitHub Actions</p>
+  </footer>
+
+  <!-- JS DANS LA MÊME PAGE -->
+  <script>
+    function sayHello() {
+      document.getElementById("message").innerText =
+        "Bonjour 👋 Le JavaScript fonctionne !";
+    }
+  </script>
+
+</body>
+</html>
